@@ -18,21 +18,7 @@ public class Borne {
 
 	/**
 	 * Constructeur de Borne qui permet d'instancier des bornes de recharge
-	 * 
-	 * @param idBorne
-	 * @param dateMiseEnService
-	 * @param typeCharge
-	 * @param station
-	 */
 
-	public Borne(int idBorne, String dateMiseEnService, TypeCharge typeCharge,
-			int station) {
-		super();
-		this.idBorne = idBorne;
-		this.dateMiseEnService = dateMiseEnService;
-		this.etat = "ES";
-		this.typeCharge = typeCharge;
-		this.station = station;
 	}
 
 	/**

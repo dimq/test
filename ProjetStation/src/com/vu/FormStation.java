@@ -20,7 +20,35 @@ import java.util.ArrayList;
  * Point d'entrée de l'application, création du JFrame, conteneur principal.
  * Construction du parc contenant les données de l'application
  * 
+ * @author leguen-t
+ *
+ */
+public class FormStation extends JFrame {
+	/**
+	 * Propriétés
+	 */
+	private static final long serialVersionUID = 1L;
+	private Parc parc;
+	private ArrayList<TypeCharge> listeTypeCharge;
 
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FormStation frame = new FormStation();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
 	 * Create the frame. Et création du menu, chargement des données
 	 */
 	public FormStation() {

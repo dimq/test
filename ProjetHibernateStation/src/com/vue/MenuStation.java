@@ -42,8 +42,8 @@ public class MenuStation extends JFrame {
 		});
 	}
 	/**
-	 * Créer le formulaire avec le menu général
-	 * gère les évènements du menu pour charger le panel associé
+	 * Crï¿½er le formulaire avec le menu gï¿½nï¿½ral
+	 * gï¿½re les ï¿½vï¿½nements du menu pour charger le panel associï¿½
 	 */
 	public MenuStation() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

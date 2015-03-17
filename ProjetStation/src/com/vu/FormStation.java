@@ -1,49 +1,4 @@
-package com.vu;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.SwingConstants;
-import javax.swing.JMenuBar;
-import javax.swing.JMenu;
-import javax.swing.JMenuItem;
-
-import com.metier.Parc;
-import com.metier.TypeCharge;
-import com.persistance.AccesData;
-
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.util.ArrayList;
-
-/**
- * Point d'entrée de l'application, création du JFrame, conteneur principal.
- * Construction du parc contenant les données de l'application
- * 
- * @author leguen-t
- *
- */
-public class FormStation extends JFrame {
-	/**
-	 * Propriétés
-	 */
-	private static final long serialVersionUID = 1L;
-	private Parc parc;
-	private ArrayList<TypeCharge> listeTypeCharge;
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					FormStation frame = new FormStation();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		});
 	}
